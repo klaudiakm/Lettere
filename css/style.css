@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Inter:wght@500;700;800&display=swap');
+
+
+:root {
+  --darkgreen: #44523F;
+  --darkpink: #ECB59C;
+  --lightyellow: #FFF8EC;
+  --blue: #55B0EB;
+  --lightgreen: #E2E3C9;
+  --lightpink: #F5D7C4;
+}
+
+html {
+  background-color: var(--lightyellow);
+  font-size: 112,5%;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+h2{
+  font-family: 'Domine';
+  font-weight:400;
+  font-size: 2.75rem;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+nav ul {
+  background-color: var(--lightyellow);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  justify-content: space-evenly;
+}
+
+header {
+  color: #44523F;
+  width: 100%;
+}
+
+.searchbox {
+    display: flex;
+}
+
+#product {
+    font-size: 1.5rem;
+    font-family: 'Domine';
+    border-bottom: solid 1px #000;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: 'Domine';
+  margin-bottom: 2rem;
+}
+
+.chatKnapp {
+  background-color:var(--blue);
+  color: var(--lightyellow);
+  font-family:'inter';
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 32px 32px 32px 0;
+  padding: 25px;
+  width: 300px;
+  position: fixed;
+  margin-left: 1100px;
+  margin-top: 50px;
+
+
+
+
+}
+
+.MainText {
+  font-size: 1.2rem;
+  font-family: 'Inter';
+  display: flex;
+  background-color: var(--darkpink);
+  gap: 64px;
+  height: 450px;
+  padding: 0 32px;
+  border-radius: 0 0 22px 22px;
+}
+
+.MainText article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--darkgreen);
+}
+
+.MainText img {
+    height: 600px;
+
+}
+
+.informasjon { /*Tekst bilde alt*/
+  display: flex;
+  flex-direction: row;
+  padding:150px 50px 50px 50px;
+  margin: 20px;
+}
+
+.informasjon article { /* container for tekst*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--lightpink);
+  flex: 3;
+  color: var(--darkgreen);
+  padding: 0 32px;
+  border-radius: 22px 0 0 22px;
+  font-family: 'Inter';
+  font-size: 1rem;
+  font: weight 500px; ;
+  gap:1.5rem;
+  line-height: 1.5;
+
+}
+
+
+.lesMerKnapp{
+
+  background-color: var(--blue);
+  border-radius: 22px 0 22px 0;
+  padding: 12px;
+  width: 100px;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--lightyellow);
+  display: flex;
+  flex-direction: row;
+
+}
+
+.articleImg {
+  width: auto;
+  height: 350px;
+  flex: 7;
+}
+
+.Hjelpetilbud { /*Tekst bilde alt*/
+  display: flex;
+  flex-direction: row-reverse;
+  padding:50px 50px 50px 50px;
+  margin: 20px;
+  
+}
+
+.Hjelpetilbud article { /* container for tekst*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--lightpink);
+  flex: 3;
+  color: var(--darkgreen);
+  padding: 0 32px;
+  border-radius: 0 22px 22px 0;
+  font-family: 'Inter';
+  font-size: 1rem;
+  font:weight 500px; ;
+  gap:1.5rem;
+  line-height: 1.5;
+}
+
+.parent {
+  background-color: #ECB59C;
+  width: auto;
+}
+
+
+
+.footer {
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+  padding: 1.5rem;
+  margin-top: auto;
+  font-size: 1rem;
+  font-family: 'Inter';
+  text-align: center;
+}
+
+.kontaktinformasjon {
+  width: 100%;
+  height: 200px;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  bottom: 0;
+  gap: 0.5rem;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  background-color: var(--lightgreen);
+}
+
+.kontaktinformasjon section {
+  display: flex;
+}
+
+
+.ul-kontaktinformasjon {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-around;
+  gap: 1rem;
+  color: var(--darkgreen);
+  background-color: var(--lightgreen);
+  transition: all 0.4s;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  font-family: 'Inter';
+}
+
+.ul-kontaktinformasjon li:hover {
+  color: var(--blue);
+}
+
+.tilbakeTopp {
+background-color: var(--lightyellow);
+font-family: 'inter'; 
+font-size: 1rem;
+width: 250px;
+padding: 0.5rem;
+border-radius: 22px;
+margin:auto;
+
+}
+.tilbakeTopp:hover {
+background-color:var(--blue);
+color: var(--lightyellow);
+
+}
+
