@@ -18,6 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 5rem;
+  font-family: 'Domine';
+  margin-bottom: 2rem;
+}
+
 h2{
   font-family: 'Domine';
   font-weight:400;
@@ -38,6 +44,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 32px;
+   
 }
 
 nav ul {
@@ -48,6 +55,13 @@ nav ul {
   display: flex;
   gap: 32px;
   justify-content: space-evenly;
+
+}
+
+nav ul li a{
+
+  text-decoration: none;
+  color: var(--darkgreen);
 }
 
 header {
@@ -59,17 +73,16 @@ header {
     display: flex;
 }
 
+.searchbox a{
+  text-decoration: none;
+}
+
 #product {
     font-size: 1.5rem;
     font-family: 'Domine';
     border-bottom: solid 1px #000;
 }
 
-h1 {
-  font-size: 5rem;
-  font-family: 'Domine';
-  margin-bottom: 2rem;
-}
 
 .chatKnapp {
   background-color:var(--blue);
@@ -153,7 +166,7 @@ h1 {
 
 .articleImg {
   width: auto;
-  height: 350px;
+  height: 400px;
   flex: 7;
 }
 
@@ -162,6 +175,7 @@ h1 {
   flex-direction: row-reverse;
   padding:50px 50px 50px 50px;
   margin: 20px;
+  margin-bottom: 100px;
   
 }
 
@@ -188,6 +202,15 @@ h1 {
 
 
 
+h3 {
+  font-family: 'Domine';
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--darkgreen);
+  padding-bottom: 40px;
+}
+
+
 .footer {
   background-color: var(--lightgreen);
   color: var(--darkgreen);
@@ -209,6 +232,8 @@ h1 {
   justify-content: space-around;
   padding-bottom: 2rem;
   background-color: var(--lightgreen);
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .kontaktinformasjon section {
@@ -230,23 +255,54 @@ h1 {
   font-family: 'Inter';
 }
 
-.ul-kontaktinformasjon li:hover {
+/*.ul-kontaktinformasjon li:hover {
   color: var(--blue);
-}
+}*/
 
 .tilbakeTopp {
 background-color: var(--lightyellow);
+color: var(--darkgreen);
 font-family: 'inter'; 
 font-size: 1rem;
 width: 250px;
 padding: 0.5rem;
 border-radius: 22px;
 margin:auto;
+text-decoration: none;
 
 }
+
 .tilbakeTopp:hover {
-background-color:var(--blue);
-color: var(--lightyellow);
+  background-color:#f9f1e4;
+  color: var(--darkgreen);
+
 
 }
+
+.chatTjenester {
+  font-family: 'Inter';
+  color: var(--darkgreen);
+  line-height: 2;
+}
+
+.openinghours {
+  background-image: url('../assets/Grønn-figur.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 600px;
+  min-height: 600px;
+  margin: 1.5rem auto;
+  padding: 6rem 0 0 4rem;
+  
+}
+
+/* media queries */
+
+@media screen and (max-width: 940px) { /* mobil versjon */
+  .openinghours {
+    font-size: 1rem;
+  }
+}
+
 
