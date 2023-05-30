@@ -201,7 +201,6 @@ header {
 }
 
 
-
 h3 {
   font-family: 'Domine';
   font-weight: 700;
@@ -210,6 +209,23 @@ h3 {
   padding-bottom: 40px;
 }
 
+.chatTjenester {
+  font-family: 'Inter';
+  color: var(--darkgreen);
+  line-height: 2;
+}
+
+.openinghours {
+  background-image: url('../assets/Grønn-figur.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 600px;
+  min-height: 600px;
+  margin: 1.5rem auto;
+  padding: 6rem 0 0 4rem;
+  
+}
 
 .footer {
   background-color: var(--lightgreen);
@@ -240,25 +256,6 @@ h3 {
   display: flex;
 }
 
-
-.ul-kontaktinformasjon {
-  display: flex;
-  width: 100%;
-  list-style-type: none;
-  justify-content: space-around;
-  gap: 1rem;
-  color: var(--darkgreen);
-  background-color: var(--lightgreen);
-  transition: all 0.4s;
-  padding-bottom: 2rem;
-  font-size: 1rem;
-  font-family: 'Inter';
-}
-
-/*.ul-kontaktinformasjon li:hover {
-  color: var(--blue);
-}*/
-
 .tilbakeTopp {
 background-color: var(--lightyellow);
 color: var(--darkgreen);
@@ -275,26 +272,54 @@ text-decoration: none;
 .tilbakeTopp:hover {
   background-color:#f9f1e4;
   color: var(--darkgreen);
-
-
 }
 
-.chatTjenester {
+
+
+.kontaktinformasjon__title {
+  font-size: 1rem;
   font-family: 'Inter';
-  color: var(--darkgreen);
-  line-height: 2;
+  padding: 2rem;
+  transform: translate(14px, -10px);
 }
 
-.openinghours {
-  background-image: url('../assets/Grønn-figur.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
+.ul-kontaktinformasjon {
+  display: flex;
   width: 100%;
-  max-width: 600px;
-  min-height: 600px;
-  margin: 1.5rem auto;
-  padding: 6rem 0 0 4rem;
-  
+  list-style-type: none;
+  justify-content: left;
+  gap: 2rem;
+  color: var(--darkgreen);
+  background-color: var(--lightgreen);
+  transition: all 0.4s;
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  font-family: 'Inter';
+  transform: translate(-80px,60px);
+}
+
+.personvern {
+  display: flex;
+  width: 40%;
+  list-style-type: none;
+  justify-content: right;
+  flex-direction: column;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-family: 'Inter';
+  gap: 10px;
+  transform: translate(60px, 50px);
+}
+
+.footer__socialmedia-section .icons {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 100px;
+  gap: 30px;
+  transform: translate(-100px, 0);
 }
 
 /* media queries */
@@ -304,5 +329,6 @@ text-decoration: none;
     font-size: 1rem;
   }
 }
+
 
 
