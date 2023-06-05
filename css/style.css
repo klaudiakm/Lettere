@@ -73,6 +73,10 @@ nav ul li a{
   color: var(--darkgreen);
 }
 
+.hamburgermeny {
+  display: none;
+}
+
 header {
   color: #44523F;
   width: 100%;
@@ -103,9 +107,9 @@ header {
   padding: 25px;
   width: 300px;
   position: fixed;
-  margin-left: 1100px;
-  margin-top: 50px;
-  
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
 }
 
 .MainText {
@@ -152,7 +156,7 @@ header {
   font: weight 500px; ;
   gap:1.5rem;
   line-height: 1.5;
-
+  min-width: 18rem;
 }
 
 
@@ -245,35 +249,33 @@ h3 {
 }
 
 .kontaktinformasjon {
-  width: 100%;
-  height: 200px;
   list-style: none;
   display: flex;
   flex-flow: column nowrap;
-  bottom: 0;
   gap: 0.5rem;
   justify-content: space-around;
-  padding-bottom: 2rem;
   background-color: var(--lightgreen);
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding: 2rem;
 }
 
 .kontaktinformasjon section {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .tilbakeTopp {
-background-color: var(--lightyellow);
-color: var(--darkgreen);
-font-family: 'inter'; 
-font-size: 1rem;
-width: 250px;
-padding: 0.5rem;
-border-radius: 22px;
-margin:auto;
-text-decoration: none;
-
+  background-color: var(--lightyellow);
+  color: var(--darkgreen);
+  font-family: 'inter'; 
+  font-size: 1rem;
+  width: 250px;
+  border-radius: 22px;
+  margin: 2rem auto;
+  text-decoration: none;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tilbakeTopp:hover {
@@ -292,7 +294,6 @@ text-decoration: none;
 
 .ul-kontaktinformasjon {
   display: flex;
-  width: 100%;
   list-style-type: none;
   justify-content: left;
   gap: 2rem;
@@ -302,7 +303,6 @@ text-decoration: none;
   padding-bottom: 2rem;
   font-size: 1rem;
   font-family: 'Inter';
-  transform: translate(-80px,60px);
 }
 
 .personvern {
@@ -310,12 +310,12 @@ text-decoration: none;
   width: 40%;
   list-style-type: none;
   justify-content: right;
+  align-items: flex-end;
   flex-direction: column;
   text-decoration: underline;
   font-size: 1rem;
   font-family: 'Inter';
   gap: 10px;
-  transform: translate(60px, 50px);
 }
 
 .footer__socialmedia-section .icons {
@@ -353,11 +353,35 @@ text-decoration: none;
     display: none;
   }
 
-  .main-nav {
+  nav ul li {
     display: none;
     
   }
 
+  .hamburgermeny {
+    display: flex;
+  
+  }
+.chatKnapp{
+  font-size: 0.7rem;
+  width: 200px;
+}
+#product{
+  font-size: 0.8rem;
+}
+.footer {
+  display: flex;
+  -ms-flex-direction: column;
+}
+
+.ul-kontaktinformasjon {
+  display: flex;
+  
+}
+
+.personvern {
+  align-items: flex-start;
+}
 
 }
 
